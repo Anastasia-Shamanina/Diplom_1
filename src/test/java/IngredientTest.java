@@ -19,8 +19,13 @@ public class IngredientTest {
     }
 
     @Test
-    public void getTypeTest() {
+    public void getTypeTest1() {
         Ingredient ingredient = new Ingredient(IngredientType.FILLING,name,price);
         assertEquals(IngredientType.FILLING,ingredient.getType());
+    }
+    @Test
+    public void getTypeTest2() {
+        Ingredient ingredient = new Ingredient(IngredientType.SAUCE,name,price);
+        assertEquals(IngredientType.SAUCE,ingredient.getType());
     }
 }
